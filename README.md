@@ -1,7 +1,6 @@
 # Responsive Landing Page Using HTML CSS & JavaScript
 # Resource
     Google font: https://fonts.google.com/
-    Boxicons: https://boxicons.com/
     Images: https://unsplash.com/
     https://jqueryui.com/
     https://developer.mozilla.org/en-US/docs/Web/CSS/:nth-of-type
