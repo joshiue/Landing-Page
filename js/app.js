@@ -71,38 +71,3 @@ function isElementInViewport(element) {
     rect.right <= (window.innerWidth || document.documentElement.clientWidth)
   );
 }
-
-//Add class 'active' to section when near top of viewport
-const offset = (section) => {
-  return Math.floor(section.getBoundingClientRect().top);
-} ;
-
-
-let removeActiveClass = (section) =>{                       
-  section.classList.remove("your-active-class");            
-  section.style.removeProperty("background");
-}
-
-
-let addActive = (add, section) => {
-  if(add){
-      section.classList.add("your-active-class");
-      section.style.background = "white";
-  };
-};
-
-const activetion = () =>{
-sections.forEach (section =>{
-const viewport = offset (section);
-itsIN = () => viewport >-167 &&  viewport <= 300 ;
-                       
-removeActiveClass(section);
-addActive(itsIN(),section);
-
-});
-
-};
-
- window.addEventListener('scroll' ,activetion);
-
- 
